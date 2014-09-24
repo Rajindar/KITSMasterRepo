@@ -7,6 +7,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+//This is a test for commiting
+
 namespace SmartDeviceProject1
 {
     public partial class Form1 : Form
