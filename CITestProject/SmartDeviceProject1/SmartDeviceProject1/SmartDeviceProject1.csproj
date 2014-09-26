@@ -89,5 +89,12 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <!-- Adding custom targets -->
+  <!-- Adding custom targets: Clean, Compile -->
+  <Target Name="Clean" >
+	  <Delete Files="$(OutputPath)$(AssemblyName).exe" />
+  </Target>
+  <Target Name="Compile">
+	  <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
+    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />
+  </Target>
 </Project>
