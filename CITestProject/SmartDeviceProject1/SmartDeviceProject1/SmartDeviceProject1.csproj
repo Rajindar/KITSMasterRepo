@@ -89,4 +89,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <!-- Adding custom targets -->
 </Project>
